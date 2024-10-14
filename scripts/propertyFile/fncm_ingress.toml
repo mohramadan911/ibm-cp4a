@@ -1,0 +1,23 @@
+# ####################################################
+# ##                CNCF Ingress             ##
+# ####################################################
+
+# Enable ingress creation on your CNCF Cluster
+INGRESS_ENABLED = true
+
+# Hostname for the generated ingress
+INGRESS_HOSTNAME = "k8s-moamalat.dataserve.com.sa"
+
+# Annotations for the generated ingress
+# Example: kubernetes.io/ingress.class: nginx
+INGRESS_ANNOTATIONS = []
+
+# Enable TLS on the generated ingress
+INGRESS_TLS_ENABLED = false
+
+# TLS secret name for the generated ingress
+INGRESS_TLS_SECRET_NAME = """<Optional>"""
+
+# Created service types
+# Options: ClusterIP, NodePort
+SERVICE_TYPE = "NodePort"

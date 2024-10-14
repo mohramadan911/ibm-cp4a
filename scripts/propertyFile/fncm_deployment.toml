@@ -1,0 +1,62 @@
+# ####################################################
+# ##          License , Platform and Version           ##
+# ####################################################
+
+# Selected FileNet Content Manager Version 
+FNCM_Version = "5.6.0"
+
+# Selected deployment license.
+LICENSE = "CP4BA.NonProd"
+
+# Platform type.
+PLATFORM = "other"
+
+# Support for Restricted Internet Access
+RESTRICTED_INTERNET_ACCESS = false
+
+# Support for FIPS
+FIPS_SUPPORT = true
+
+# ####################################################
+# ##              Optional Components               ##
+# ####################################################
+
+# Deploy Content Platform Engine (CPE).
+CPE = true
+
+# Deploy Graphql (GRAPHQL).
+GRAPHQL = true
+
+# Deploy Business Automation Navigator (BAN).
+BAN = true
+
+# Deploy Content Search Services (CSS).
+CSS = false
+
+# Deploy Content Management Interoperability Services (CMIS).
+CMIS = true
+
+# Deploy Task Manager (TM).
+TM = false
+
+# Deploy External Share (ES).
+ES = false
+
+# Deploy Enterprise Records (IER).
+IER = false
+
+# Deploy Content Collector for SAP (ICCSAP).
+ICCSAP = false
+
+# ####################################################
+# ##                   File Storage                 ##
+# ####################################################
+
+# Storage class name for slow file storage.
+SLOW_FILE_STORAGE_CLASSNAME = "vsphere-csi-sc"
+
+# Storage class name for medium file storage.
+MEDIUM_FILE_STORAGE_CLASSNAME = "vsphere-csi-sc"
+
+# Storage class name for fast file storage.
+FAST_FILE_STORAGE_CLASSNAME = "vsphere-csi-sc"

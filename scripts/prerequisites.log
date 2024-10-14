@@ -1,0 +1,87 @@
+ERROR 2024-10-13 23:00:30,673 [validate.py:kubectl_apply:1148] Exception applying '/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/tmp/vsphere-csi-sc.yaml' -  The PersistentVolumeClaim "fncm-test-pvc" is invalid: 
+* spec: Forbidden: spec is immutable after creation except resources.requests for bound claims
+  core.PersistentVolumeClaimSpec{
+- 	AccessModes: []core.PersistentVolumeAccessMode{"ReadWriteOnce"},
++ 	AccessModes: []core.PersistentVolumeAccessMode{"ReadWriteMany"},
+  	Selector:    nil,
+  	Resources:   {Requests: {s"storage": {i: {...}, Format: "BinarySI"}}},
+  	... // 5 identical fields
+  }
+
+* spec.resources.requests.storage: Forbidden: field can not be less than previous value
+Traceback (most recent call last):
+  File "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/validate.py", line 1141, in kubectl_apply
+    response = subprocess.check_output(kubectl_cmd, shell=True, stderr=subprocess.PIPE, universal_newlines=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'kubectl apply -f "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/tmp/vsphere-csi-sc.yaml"' returned non-zero exit status 1.
+ERROR 2024-10-13 23:01:10,183 [validate.py:kubectl_apply:1148] Exception applying '/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/generatedFiles/ibm_fncm_cr_production.yaml' -  error: resource mapping not found for name: "fncmdeploy" namespace: "" from "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/generatedFiles/ibm_fncm_cr_production.yaml": no matches for kind "FNCMCluster" in version "fncm.ibm.com/v1"
+ensure CRDs are installed first
+Traceback (most recent call last):
+  File "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/validate.py", line 1141, in kubectl_apply
+    response = subprocess.check_output(kubectl_cmd, shell=True, stderr=subprocess.PIPE, universal_newlines=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'kubectl apply -f "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/generatedFiles/ibm_fncm_cr_production.yaml"' returned non-zero exit status 1.
+ERROR 2024-10-13 23:06:04,858 [validate.py:kubectl_apply:1148] Exception applying '/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/tmp/vsphere-csi-sc.yaml' -  The PersistentVolumeClaim "fncm-test-pvc" is invalid: 
+* spec: Forbidden: spec is immutable after creation except resources.requests for bound claims
+  core.PersistentVolumeClaimSpec{
+- 	AccessModes: []core.PersistentVolumeAccessMode{"ReadWriteOnce"},
++ 	AccessModes: []core.PersistentVolumeAccessMode{"ReadWriteMany"},
+  	Selector:    nil,
+  	Resources:   {Requests: {s"storage": {i: {...}, Format: "BinarySI"}}},
+  	... // 5 identical fields
+  }
+
+* spec.resources.requests.storage: Forbidden: field can not be less than previous value
+Traceback (most recent call last):
+  File "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/validate.py", line 1141, in kubectl_apply
+    response = subprocess.check_output(kubectl_cmd, shell=True, stderr=subprocess.PIPE, universal_newlines=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'kubectl apply -f "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/tmp/vsphere-csi-sc.yaml"' returned non-zero exit status 1.
+ERROR 2024-10-13 23:07:00,080 [validate.py:kubectl_apply:1148] Exception applying '/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/generatedFiles/ibm_fncm_cr_production.yaml' -  error: resource mapping not found for name: "fncmdeploy" namespace: "" from "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/generatedFiles/ibm_fncm_cr_production.yaml": no matches for kind "FNCMCluster" in version "fncm.ibm.com/v1"
+ensure CRDs are installed first
+Traceback (most recent call last):
+  File "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/validate.py", line 1141, in kubectl_apply
+    response = subprocess.check_output(kubectl_cmd, shell=True, stderr=subprocess.PIPE, universal_newlines=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'kubectl apply -f "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/generatedFiles/ibm_fncm_cr_production.yaml"' returned non-zero exit status 1.
+ERROR 2024-10-13 23:15:55,936 [validate.py:kubectl_apply:1148] Exception applying '/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/tmp/vsphere-csi-sc.yaml' -  The PersistentVolumeClaim "fncm-test-pvc" is invalid: 
+* spec: Forbidden: spec is immutable after creation except resources.requests for bound claims
+  core.PersistentVolumeClaimSpec{
+- 	AccessModes: []core.PersistentVolumeAccessMode{"ReadWriteOnce"},
++ 	AccessModes: []core.PersistentVolumeAccessMode{"ReadWriteMany"},
+  	Selector:    nil,
+  	Resources:   {Requests: {s"storage": {i: {...}, Format: "BinarySI"}}},
+  	... // 5 identical fields
+  }
+
+* spec.resources.requests.storage: Forbidden: field can not be less than previous value
+Traceback (most recent call last):
+  File "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/validate.py", line 1141, in kubectl_apply
+    response = subprocess.check_output(kubectl_cmd, shell=True, stderr=subprocess.PIPE, universal_newlines=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'kubectl apply -f "/Users/mohamedramadan/Documents/dataserverepos/container-samples/scripts/helper_scripts/validate/tmp/vsphere-csi-sc.yaml"' returned non-zero exit status 1.

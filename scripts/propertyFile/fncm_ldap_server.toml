@@ -1,0 +1,63 @@
+
+# ####################################################
+# ##                 LDAP Properties                ##
+# ####################################################
+
+[LDAP]
+
+# The type of LDAP server
+LDAP_TYPE = "Microsoft Active Directory"
+
+# The ID of LDAP server
+LDAP_ID = "ldap"
+
+# The host of the LDAP server.
+LDAP_SERVER = "10.0.0.72"
+
+# The port of the LDAP server to connect.
+LDAP_PORT = "389"
+
+# The LDAP base DN.
+LDAP_BASE_DN = "DC=dev,DC=ds"
+
+# The LDAP group base DN.
+LDAP_GROUP_BASE_DN = "DC=dev,DC=ds"
+
+# The LDAP bind DN.
+LDAP_BIND_DN = """CN=wasadmin,CN=Users,DC=dev,DC=ds"""
+
+# The password for LDAP bind DN.
+LDAP_BIND_DN_PASSWORD = """P@ssw0rd"""
+
+# Enable SSL for LDAP connection.
+LDAP_SSL_ENABLED = false
+
+# The LDAP username attribute.
+LDAP_USER_NAME_ATTRIBUTE = "user:sAMAccountName"
+
+# The LDAP user display name attribute.
+LDAP_USER_DISPLAY_NAME_ATTR = "sAMAccountName"
+
+# The LDAP group name attribute.
+LDAP_GROUP_NAME_ATTRIBUTE = "*:cn"
+
+# The LDAP group display name attribute.
+LDAP_GROUP_DISPLAY_NAME_ATTR = "cn"
+
+# The LDAP group membership ID map.
+LDAP_GROUP_MEMBERSHIP_ID_MAP = "memberOf:member"
+
+# The LDAP group membership search filter.
+LDAP_GROUP_MEMBERSHIP_SEARCH_FILTER = "(|(&(objectclass=groupofnames)(member=%v))(&(objectclass=groupofuniquenames)(uniquemember=%v)))"
+
+# The LDAP user filter.
+LC_USER_FILTER = "(&(samAccountName=%v)(objectClass=user))"
+
+# The LDAP group filter.
+LC_GROUP_FILTER = "(&(cn=%v)(objectclass=group))"
+
+# The Global Catalog host for the LDAP
+LC_AD_GC_HOST = "<Optional>"
+
+# The Global Catalog port for the LDAP
+LC_AD_GC_PORT = "<Optional>"

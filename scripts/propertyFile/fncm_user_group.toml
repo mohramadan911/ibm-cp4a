@@ -1,0 +1,55 @@
+# ####################################################
+# ##           Common Credential Properties         ##
+# ####################################################
+
+# Provide keystore password for FNCM deployment.
+KEYSTORE_PASSWORD = """P@ssw0rdDataserve2030"""
+
+# Provide LTPA key password for FNCM deployment.
+LTPA_PASSWORD = """P@ssw0rd"""
+
+# ####################################################
+# ##           P8 CPE Credential Properties         ##
+# ####################################################
+
+# Provide the user name for P8Domain.
+FNCM_LOGIN_USER = """p8admin"""
+
+# Provide the user password for P8Domain.
+FNCM_LOGIN_PASSWORD = """P@ssw0rd"""
+
+# ####################################################
+# ##          Navigator Credential Properties       ##
+# ####################################################
+
+# Provide the username for ICN Admin.
+ICN_LOGIN_USER = """p8admin"""
+
+# Provide the user password for ICN Admin.
+ICN_LOGIN_PASSWORD = """P@ssw0rd"""
+
+
+# ####################################################
+# ##         Initialize and Verify Properties       ##
+# ####################################################
+
+# Enable/disable FNCM / BAN initialization.
+CONTENT_INITIALIZATION_ENABLE = true
+
+# Usernames for GCD administrators.
+GCD_ADMIN_USER_NAME = ["""p8admin"""]
+
+# Names for GCD administrator groups.
+GCD_ADMIN_GROUPS_NAME = ["""p8admins"""]
+
+# Enable/disable FNCM / BAN verification.
+CONTENT_VERIFICATION_ENABLE = true
+
+[OS]
+
+# List of admin groups and users for the Object Store.
+# The FNCM_LOGIN_USER will be added as an Object Store Admin by default
+CPE_OBJ_STORE_OS_ADMIN_USER_GROUPS = ["""p8admins"""]
+
+# Enable/disable the PE Workflow for the Object Store
+CPE_OBJ_STORE_OS_PE_WORKFLOW_ENABLE = false

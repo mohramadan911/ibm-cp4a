@@ -1,0 +1,24 @@
+# ####################################################
+# ##          IBM Content Navigator Options         ##
+# ####################################################
+
+[SENDMAIL]
+
+# The name of the Send Mail server to connect.
+JAVA_MAIL_HOST = "10.0.0.72"
+
+# The port of the Send Mail server to connect.
+JAVA_MAIL_PORT = "465"
+
+# Send Mail sender name.
+JAVAMAIL_SENDER = "p8admin@dataserve.com.sa"
+
+# Send Mail admin username.
+JAVAMAIL_USERNAME = """p8admin"""
+
+# Send Mail admin password.
+JAVAMAIL_PASSWORD = """P@ssw0rd"""
+
+# Enable SSL for Send Mail connection.
+JAVAMAIL_SSL = false
+

@@ -1,0 +1,82 @@
+# ####################################################
+# ##           FNCM Component Image Details          ##
+# ####################################################
+
+[DBA-KEYTOOL-INITCONTAINER]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/common/dba-keytool-initcontainer"
+
+TAG = "24.0.0-IF002"
+
+[CPE]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/fncm/cpe"
+
+TAG = "ga-560-p8cpe-la004"
+
+[CSS]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/fncm/css"
+
+TAG = "ga-560-p8css-la004"
+
+[CMIS]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/fncm/cmis"
+
+TAG = "ga-307-cmis-if007"
+
+[GRAPHQL]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/fncm/graphql"
+
+TAG = "ga-560-p8cgql-la004"
+
+[EXTSHARE]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/fncm/extshare"
+
+TAG = "ga-310-es-if001"
+
+[TASKMGR]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/fncm/taskmgr"
+
+TAG = "ga-310-tm-if001"
+
+[NAVIGATOR]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/ban/navigator"
+
+TAG = "ga-310-icn-if001"
+
+[IER]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/ier/ier"
+
+TAG = "24.0.0-IF002"
+
+[ICCSAP]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/iccsap/iccsap"
+
+TAG = "24.0.0-IF002"
+
+[CPE-SSO]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/fncm/cpe-sso"
+
+TAG = "ga-560-p8cpe-la004"
+
+[NAVIGATOR-SSO]
+
+REPOSITORY = "cp.icr.io/cp/cp4a/ban/navigator-sso"
+
+TAG = "ga-310-icn-if001"
+
+[IBM-FNCM-OPERATOR]
+
+REPOSITORY = "icr.io/cpopen/icp4a-content-operator"
+
+TAG = "5.6.0-LA004"
+
